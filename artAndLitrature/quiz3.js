@@ -18,31 +18,115 @@ function takeQuiz() {
             this.correct = correct;
          };
 
+         // var question0 = new Questions(
+         //    "Which of these is a fruit?",
+         //    "A. apple",
+         //    "B. rock",
+         //    "C. paper",
+         //    "apple"
+         // );
+         // var question1 = new Questions(
+         //    "which is best?",
+         //    "A. andriod",
+         //    "B. ios",
+         //    "C. kaios",
+         //    "android"
+         // );
+         // var question2 = new Questions(
+         //    "Which is a place from india?",
+         //    "A. Delhi",
+         //    "B. karchi",
+         //    "C. dhaka",
+         //    "Delhi"
+         // );
+
+         // questionsArray = [question0, question1, question2];
+
          var question0 = new Questions(
-            "Which of these is a fruit?",
-            "A. apple",
-            "B. rock",
-            "C. paper",
-            "apple"
+            "Who was the author of the famous storybook 'Alice's Adventures in Wonderland'?",
+            "A.Rudyard Kipling",
+            "B.John Keats",
+            "C.Lewis Carroll",
+            "C"
          );
          var question1 = new Questions(
-            "which is best?",
-            "A. andriod",
-            "B. ios",
-            "C. kaios",
-            "android"
+            "Who wrote the famous 1885 poem 'The Charge of the Light Brigade'?",
+            "A.Lord Alfred Tennyson",
+            "B.Chirstopher Marlowe",
+            "C.Johannes Gutenberg",
+            "A"
          );
          var question2 = new Questions(
-            "Which is a place from india?",
-            "A. Delhi",
-            "B. karchi",
-            "C. dhaka",
-            "Delhi"
+            "Who wrote 'Where ignorance is bliss,itis folly to be wise'?",
+            "A.Browning",
+            "B.Marx",
+            "C.Shakspeare",
+            "C"
          );
+         var question3 = new Questions(
+            "Name the book which opens with the line 'All children,except one grew up'?",
+            "A.The Railway Children",
+            "B.Winnnie the Pooh",
+            "C.Peter Pan",
+            "C"
+         );
+         var question4 = new Questions(
+            "Which is the first Harry Potter book?",
+            "A.HP and The Goblet Of The Fire",
+            "B.HP and The Philospher's Stone",
+            "C.HP and The Chamber Of Secrets",
+            "B"
+         );
+         var question5 = new Questions(
+            "In which century were Geoffrey Chaucer's Canterbury Tales written?",
+            "A.13th-14th",
+            "B.14th-15th",
+            "C.15th-16th",
+            "A"
+         );
+         var question6 = new Questions(
+            "What was the nationality of Robert Louis Stevenson,writer of 'Treasure Island'?",
+            "A.Scottish",
+            "B.Welsh",
+            "C.Irish",
+            "A"
+         );
+         var question7 = new Questions(
+            "'Jane Eyre' was written by Bronte sister?",
+            "A.Anne",
+            "B.Charlotte",
+            "C.Emily",
+            "B"
+         );
+         var question8 = new Questions(
+            "What is the book 'Lord of the Flies'about?",
+            "A.A round trip around the USA",
+            "B.A swarm of killer flies",
+            "C.Schoolboys on the desert island",
+            "C"
+         );
+         var question9 = new Questions(
+            "In the book 'The Lord Of The Rings',who or what is bilbo?",
+            "A.Drwaf",
+            "B.Wizard",
+            "C.Hobbit",
+            "C"
+         );
+         questionsArray = [
+            question0,
+            question1,
+            question2,
+            question3,
+            question4,
+            question5,
+            question6,
+            question7,
+            question8,
+            question9
+         ];
 
-         questionsArray = [question0, question1, question2];
          if (play === 0) {
-            random = Math.floor(Math.random() * 3);
+            random = Math.floor(Math.random() * 10);
             console.log(random);
             console.log(askedQuestions);
 
@@ -85,7 +169,7 @@ function takeQuiz() {
 // function to validate the answer and display the result here
 
 function run() {
-   if (count <= 2) {
+   if (count <= 9) {
       var ans = document.getElementById("ans").value;
 
       if (questionsArray[random].correct === ans) {
@@ -133,7 +217,7 @@ function run() {
          takeQuiz();
       }
 
-      if (count == 3) {
+      if (count == 9) {
          document.getElementById("answeButton").innerHTML = "";
          document.getElementById("newGameArea").innerHTML =
             "<p>You have completed all the questions in this category!! Congratulations</p>";
