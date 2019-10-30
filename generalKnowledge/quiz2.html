@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>Let's get bored</title>
+      <link rel="stylesheet" href="styles.css" />
+   </head>
+   <body>
+      <br />
+      <br />
+      <br />
+      <br />
+      <div class="container" id="yahoo">
+         <h2 id="playerName">Hello</h2>
+         <h2>The answers for the questions are case sensetive.</h2>
+         <h4>
+            You are in level 2. Here, if you don't answer a question correctly
+            you will get another question but your score will be lost.
+         </h4>
+         <br />
+         <div>
+            <div id="question"></div>
+         </div>
+         <br />
+         <div>
+            <div id="res"></div>
+            <div id="score"></div>
+         </div>
+         <div id="ansTextbox">
+            <input
+               class="textBox"
+               type="text"
+               id="ans"
+               placeholder="Answer here"
+            />
+         </div>
+         <br />
+         <div id="answeButton">
+            <button class="button" id="ansBtn" onclick="run()">
+               Submit answer
+            </button>
+         </div>
+         <br />
+         <div id="newGameArea"></div>
+      </div>
+      <br />
+      <br />
+   </body>
+   <script src="technical.js"></script>
+   <script src="quiz2.js"></script>
+</html>

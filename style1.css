@@ -1,0 +1,120 @@
+body,
+html {
+   height: 100%;
+   margin: 0;
+   font: 400 15px/1.8 "Lato", sans-serif;
+   color: #777;
+}
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3,
+.bgimg-4,
+.bgimg-5,
+.bgimg-6,
+.bgimg-7,
+.bgimg-8 {
+   position: relative;
+   opacity: 0.95;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.bgimg-1 {
+   background-image: url(./assets/1.jpg);
+   height: 100%;
+}
+
+.bgimg-2 {
+   background-image: url(./assets/3.jpg);
+   height: 100%;
+}
+
+.bgimg-3 {
+   background-image: url(./assets/4.jpg);
+   height: 100%;
+}
+
+.bgimg-4 {
+   background-image: url(./assets/5.jpg);
+   height: 100%;
+}
+
+.bgimg-5 {
+   background-image: url(./assets/6.jpg);
+   height: 100%;
+}
+
+.bgimg-6 {
+   background-image: url(./assets/7.jpg);
+   height: 100%;
+}
+
+.bgimg-7 {
+   background-image: url(./assets/8.jpg);
+   height: 100%;
+}
+
+.bgimg-8 {
+   background-image: url(./assets/9.jpg);
+   height: 100%;
+}
+
+.caption {
+   position: absolute;
+   left: 0;
+   top: 50%;
+   width: 100%;
+   text-align: center;
+   color: #000;
+}
+
+.caption span.heading {
+   /* background-color: #111; */
+   color: #fff;
+   padding: 18px;
+   font-size: 50px;
+   font-weight: 800;
+   letter-spacing: 5px;
+}
+
+.caption span.subheading {
+   /* background-color: #111; */
+   color: #fff;
+   padding: 18px;
+   font-size: 25px;
+   letter-spacing: 2px;
+}
+
+.button {
+   background-color: rgb(187, 0, 0);
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
+}
+
+.githubButton {
+   background-color: transparent;
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
+}
+
+h3 {
+   letter-spacing: 5px;
+   text-transform: uppercase;
+   font: 20px "Lato", sans-serif;
+   color: #111;
+}
