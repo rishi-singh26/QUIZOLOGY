@@ -56,7 +56,7 @@ html {
 }
 
 .bgimg-8 {
-   background-image: url(./assets/9.jpg);
+   background-image: url(./assets/9.png);
    height: 100%;
 }
 
@@ -76,6 +76,7 @@ html {
    font-size: 50px;
    font-weight: 800;
    letter-spacing: 5px;
+   border-bottom: solid 5px rgb(187, 0, 0);
 }
 
 .caption span.subheading {
@@ -90,7 +91,7 @@ html {
    background-color: rgb(187, 0, 0);
    border: none;
    color: white;
-   padding: 15px 32px;
+   padding: 8px 15px;
    text-align: center;
    text-decoration: none;
    display: inline-block;
@@ -117,4 +118,8 @@ h3 {
    text-transform: uppercase;
    font: 20px "Lato", sans-serif;
    color: #111;
+}
+
+#licensing {
+   margin-left: 30%;
 }
