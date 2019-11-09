@@ -2,7 +2,7 @@ var QuestionsArray;
 var random;
 var noOfQuestions = 0;
 var count = 0; //this counts the score of the player
-var play = 0; //game os on if = 1, game is off
+var play = 0; //game os on if play = 0, game is off if play = 1
 var questionNo = 1; //this puts the question number infront of each question
 var askedQuestions = []; //this is an array which contains all the Questions which has been asked
 var questionIsAsked = 0; //0 means the question is not yet asked.

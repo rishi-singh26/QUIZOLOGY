@@ -8,7 +8,7 @@ var questionIsAsked = 0; //0 means the question is not yet asked.
 
 function takeQuiz() {
    // Quiz is below
-   if (count <= 2) {
+   if (count <= 9) {
       if (play === 0) {
          var Questions = function(question, ans1, ans2, ans3, correct) {
             this.question = question;
@@ -217,7 +217,7 @@ function run() {
          takeQuiz();
       }
 
-      if (count == 9) {
+      if (count == 10) {
          document.getElementById("answeButton").innerHTML = "";
          document.getElementById("newGameArea").innerHTML =
             "<p>You have completed all the questions in this category!! Congratulations</p>";
